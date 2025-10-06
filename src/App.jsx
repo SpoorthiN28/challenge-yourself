@@ -5,7 +5,7 @@ import ChallengesPage from './pages/Challenges.jsx';
 
 const router = createBrowserRouter([
   { path: '/', element: <WelcomePage /> },
-  { path: '/challenges', element: <ChallengesPage /> },
+  { path: '/challenge', element: <ChallengesPage /> },
 ]);
 
 function App() {
