@@ -5,6 +5,7 @@ import cityImg from '../assets/city.jpg';
 import heroImg from '../assets/hero.png';
 import PageContent from '../components/PageCOntent';
 
+
 export default function WelcomePage() {
   const { scrollY } = useScroll();
 
