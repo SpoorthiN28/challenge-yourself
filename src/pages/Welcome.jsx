@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 import cityImg from '../assets/city.jpg';
 import heroImg from '../assets/hero.png';
+import PageContent from '../components/PageCOntent';
 
 export default function WelcomePage() {
   const { scrollY } = useScroll();
@@ -15,7 +16,7 @@ export default function WelcomePage() {
   const scaleText = useTransform(scrollY, [0, 300], [1, 1.5]);
 
   return (
-    <>
+    <PageContent>
       <header id="welcome-header">
         <motion.div id="welcome-header-content" style={{ scale: scaleText, y: yText }}>
           <h1>Ready for a challenge?</h1>
@@ -55,6 +56,6 @@ export default function WelcomePage() {
           </p>
         </section>
       </main>
-    </>
+    </PageContent>
   );
 }

@@ -47,7 +47,7 @@ const ChallengeList = () => {
         <div id="tabs">
           {
             ['all', 'completed', 'pending'].map((status, index) => (
-              <li key={index} id="check-list">
+              <li key={index}>
                 <button
                   onClick={() => dispatch(setStatusFilter(status))}
                   id={(filter.status === status ? "tabs-button" : 'tabs-inactive')}
