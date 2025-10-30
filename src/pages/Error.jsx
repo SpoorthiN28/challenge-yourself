@@ -1,4 +1,4 @@
-import PageContent from "../components/PageCOntent";
+import PageContent from "../components/PageContent";
 
 export default function ErrorPage() {
   const error = useRouteError();
